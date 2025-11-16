@@ -13,8 +13,9 @@ public class Rewards : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = new Vector3(mousePos.x, mousePos.y, 0);
     }
-    private void OnMouseDown()
+    private void OnMouseDrag()
     {
         transform.position = mousePos;
     }
