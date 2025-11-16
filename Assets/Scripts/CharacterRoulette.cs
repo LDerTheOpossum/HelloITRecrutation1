@@ -27,6 +27,7 @@ public class CharacterRoulette : MonoBehaviour
     [SerializeField] private TMP_InputField betInput;
 
     [SerializeField] private RewardSystem rewardSystem;
+    [SerializeField] private MoneyHandler moneyHandler;
 
     private void Awake()
     {
@@ -61,6 +62,7 @@ public class CharacterRoulette : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             {
                 spining = true;
+                moneyHandler.MoneyDecrease();
                 StartCoroutine(Spin());
             }
 

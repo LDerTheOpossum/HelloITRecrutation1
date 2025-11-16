@@ -365,6 +365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaskedKidMichal
       objectReference: {fileID: 0}
+    - target: {fileID: 9102050605935412640, guid: 941a93c8dc9f7f7499c81a5e28000443, type: 3}
+      propertyPath: value
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,6 +610,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4979884198937467987, guid: d772bd2c4373c044fb366dbce0002d39, type: 3}
+      propertyPath: value
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2895386418372043684, guid: d772bd2c4373c044fb366dbce0002d39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5
@@ -720,6 +728,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 437098645509093180, guid: 8355f23aa581393469d0532d8550a548, type: 3}
+      propertyPath: value
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2422980047374684226, guid: 8355f23aa581393469d0532d8550a548, type: 3}
       propertyPath: m_Name
       value: ZombieMichal
@@ -834,6 +846,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4453649821705033993, guid: 89dc57745ce9db14697a6105db730968, type: 3}
+      propertyPath: value
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 6287003956182481897, guid: 89dc57745ce9db14697a6105db730968, type: 3}
       propertyPath: m_Name
       value: KidMichal
