@@ -29,10 +29,13 @@ public class CharacterRoulette : MonoBehaviour
     [SerializeField] private RewardSystem rewardSystem;
     [SerializeField] private MoneyHandler moneyHandler;
 
+    private AudioSource spinAudioSource;
+
     private void Awake()
     {
         uint seed = (uint)System.DateTime.Now.Millisecond;
         rng = new Random(seed);
+        spinAudioSource = GetComponent<AudioSource>();
 
     }
     // Start is called once before the first executio]n of Update after the MonoBehaviour is created
@@ -78,6 +81,7 @@ public class CharacterRoulette : MonoBehaviour
         for (int i = 0; i < rng.NextInt(50, 150); i++)
         {
             yield return new WaitForSeconds(0.005f*i);
+            spinAudioSource.Play();
             if (newCurrentNumber >= 37)
                 newCurrentNumber = 0;
             currenRouletteNumber = rouletteNumbers[newCurrentNumber];
@@ -97,6 +101,9 @@ public class CharacterRoulette : MonoBehaviour
     {
         Debug.Log(score);
         Reward chosenReward = rewardSystem.ChosenReward(score);
-        Instantiate(chosenReward.rewardObject);
+        for (int i = 0; i < chosenReward.rewardAmmount; i++)
+        {
+            Instantiate(chosenReward.rewardObject);
+        }
     }
 }
